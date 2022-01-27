@@ -20,7 +20,7 @@ public class MainUIHandler : MonoBehaviour
                     var item = GameObject.Instantiate(prefabs[i].gameObject) as GameObject;
                     item.transform.SetParent(itemContainer, false);
                     item.transform.name = prefabs[i].name;
-                    item.transform.localScale = new Vector3(100, 100, 0);
+                    item.transform.localScale = new Vector3(100, 100, 1);
                     item.transform.localPosition = new Vector3(Random.Range(-200, 200), 0, 0);
                 }
             }
